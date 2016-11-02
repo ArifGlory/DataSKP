@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:background="#FF0000"
+    >
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="130dp"
+        android:src="@drawable/logo_bptk"
+        android:id="@+id/gmbrProfile"
+        android:scaleType="fitCenter"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/lineInfoDrawer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:text="Nama Profil"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:id="@+id/txtjudulDrawer"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtbawahjudul"
+            android:text="Data SKP"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textStyle="italic"
+            android:textSize="20sp"
+
+            />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

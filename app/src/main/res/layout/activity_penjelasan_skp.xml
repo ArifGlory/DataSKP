@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context="glory.dataskp.LihatSKPActivity"
+    android:background="@drawable/back2">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="glory.dataskp.PenjelasanSKPActivity"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rela1">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/layout_toolbar"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo_bptk"
+            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balai Pengkajian Teknologi Pertanian"
+            android:layout_marginRight="5dp"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="SKP"
+        android:textColor="#FAFAfa"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:id="@+id/txtjudulUtama"
+        android:layout_below="@+id/rela1"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:text="Kegiatan "
+        android:textColor="#FAFAfa"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:id="@+id/txtjudulKegiatan"
+        android:layout_below="@+id/txtjudulUtama"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp"
+        android:text="Nama Kegiatan"
+        android:textColor="#FAFAFA"
+        android:textSize="16sp"
+        android:id="@+id/txtpenjelKegiatan"
+        android:layout_below="@+id/txtjudulKegiatan"
+        android:textStyle="italic"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:text="Angka Kredit "
+        android:textColor="#FAFAFa"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:id="@+id/txtjudulAngkaKredit"
+        android:layout_below="@+id/txtpenjelKegiatan"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp"
+        android:text="Nama Angka kredit"
+        android:textColor="#FAFAFa"
+        android:textSize="16sp"
+        android:id="@+id/txtpenjelAngkaKredit"
+        android:layout_below="@+id/txtjudulAngkaKredit"
+        android:textStyle="italic"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:text="Kuantitas "
+        android:textColor="#FAFAFa"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:id="@+id/txtjudulKuantitas"
+        android:layout_below="@+id/txtpenjelAngkaKredit"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp"
+        android:text="Nama Kuantitas"
+        android:textColor="#FAFAFa"
+        android:textSize="16sp"
+        android:id="@+id/txtpenjelKuantitas"
+        android:layout_below="@+id/txtjudulKuantitas"
+        android:textStyle="italic"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:text="Kualitas / Mutu "
+        android:textColor="#FAFAFa"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:id="@+id/txtjudulKualitas"
+        android:layout_below="@+id/txtpenjelKuantitas"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp"
+        android:text="Nama Kualitas"
+        android:textColor="#FAFAFa"
+        android:textSize="16sp"
+        android:id="@+id/txtpenjelKualitas"
+        android:layout_below="@+id/txtjudulKualitas"
+        android:textStyle="italic"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:text="Output"
+        android:textColor="#FAFAFa"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:id="@+id/txtjudulOutput"
+        android:layout_below="@+id/txtpenjelKualitas"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp"
+        android:text="Nama Output"
+        android:textColor="#FAFAFa"
+        android:textSize="16sp"
+        android:id="@+id/txtpenjelOutput"
+        android:layout_below="@+id/txtjudulOutput"
+        android:textStyle="italic"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:text="Bulan"
+        android:textColor="#FAFAFa"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:id="@+id/txtjudulBulan"
+        android:layout_below="@+id/txtpenjelOutput"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp"
+        android:text="Berapa Bulan"
+        android:textColor="#FAFAFA"
+        android:textSize="16sp"
+        android:id="@+id/txtpenjelBulan"
+        android:layout_below="@+id/txtjudulBulan"
+        android:textStyle="italic"
+        />
+
+</RelativeLayout>
+</ScrollView>

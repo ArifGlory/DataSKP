@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "227801381355",
+    "firebase_url": "https://data-skp.firebaseio.com",
+    "project_id": "data-skp",
+    "storage_bucket": "data-skp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:227801381355:android:07743e3b527f8766",
+        "android_client_info": {
+          "package_name": "glory.dataskp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "227801381355-e660oqkh6r7si48m6383ig4t260ptieu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "glory.dataskp",
+            "certificate_hash": "6DEE4C938E63728CEC14DA4A716E8BEBA5630722"
+          }
+        },
+        {
+          "client_id": "227801381355-ee36dbrf56og8tv4tv9t7iju3fk0coau.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsrxBptSNGmh2UjLsLrtCbGlJ6ifmxRB0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "227801381355-ee36dbrf56og8tv4tv9t7iju3fk0coau.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

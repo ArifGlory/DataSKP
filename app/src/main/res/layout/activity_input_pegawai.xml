@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context="glory.dataskp.InputPegawaiActivity"
+    android:background="@drawable/back2">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rela1">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/layout_toolbar"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/logo_bptk"
+                android:scaleType="fitCenter"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Balai Pengkajian Teknologi Pertanian"
+                android:layout_marginRight="5dp"
+                android:textSize="15sp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                />
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Daftar"
+            android:textColor="#fafafa"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:id="@+id/txtjudulUtama"
+            android:layout_below="@+id/rela1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:textColor="#fafafa"
+            android:textSize="18sp"
+            android:layout_below="@+id/txtjudulUtama"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/txtKegiatan"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/line1"
+            android:layout_below="@+id/txtKegiatan"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editdaftarNama"
+                android:textColor="#FAFAFA"
+                />
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIP"
+            android:textColor="#fafafa"
+            android:textSize="18sp"
+            android:id="@+id/txtAngkaKredit"
+            android:layout_below="@+id/line1"
+            android:layout_marginLeft="30dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/line2"
+            android:layout_below="@+id/txtAngkaKredit"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            >
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editdaftarNip"
+                android:textColor="#FAFAFA"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pangkat"
+            android:textColor="#fafafa"
+            android:textSize="18sp"
+            android:id="@+id/txtKuantitas"
+            android:layout_below="@+id/line2"
+            android:layout_marginLeft="30dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/line3"
+            android:layout_below="@+id/txtKuantitas"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editdaftarPangkat"
+                android:textColor="#FAFAFA"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jabatan"
+            android:textColor="#fafafa"
+            android:textSize="18sp"
+            android:id="@+id/txtKualitas"
+            android:layout_below="@+id/line3"
+            android:layout_marginLeft="30dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/line4"
+            android:layout_below="@+id/txtKualitas"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editdaftarJabatan"
+                android:textColor="#FAFAFA"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unit Kerja"
+            android:textColor="#fafafa"
+            android:textSize="18sp"
+            android:id="@+id/txtOutput"
+            android:layout_below="@+id/line4"
+            android:layout_marginLeft="30dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/line5"
+            android:layout_below="@+id/txtOutput"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editdaftarUnit"
+                android:textColor="#FAFAFA"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="#fafafa"
+            android:textSize="18sp"
+            android:id="@+id/txtWaktu"
+            android:layout_below="@+id/line5"
+            android:layout_marginLeft="30dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/line6"
+            android:layout_below="@+id/txtWaktu"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editdaftarPass"
+                android:layout_weight="1"
+                android:textColor="#FAFAFA"
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ketik ulang Password"
+            android:textColor="#fafafa"
+            android:textSize="18sp"
+            android:id="@+id/txtPassbaruu"
+            android:layout_below="@+id/line6"
+            android:layout_marginLeft="30dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/line7"
+            android:layout_below="@+id/txtPassbaruu"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editdaftarPassulang"
+                android:layout_weight="1"
+                android:textColor="#FAFAFA"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSimpanSKP"
+            android:text="Daftar"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/line7"
+            android:onClick="btnSimpanDP"
+            />
+
+    </RelativeLayout>
+</ScrollView>

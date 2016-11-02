@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context="glory.dataskp.InputSKPActivity"
+    android:background="@drawable/back2">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rela1">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/layout_toolbar"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo_bptk"
+            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balai Pengkajian Teknologi Pertanian"
+            android:layout_marginRight="5dp"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Input Data SKP"
+        android:textColor="#FAFAFA"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:id="@+id/txtjudulUtama"
+        android:layout_below="@+id/rela1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kegiatan"
+        android:textColor="#FAFAFA"
+        android:textSize="18sp"
+        android:layout_below="@+id/txtjudulUtama"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/txtKegiatan"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line1"
+        android:layout_below="@+id/txtKegiatan"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editKegiatan"
+            android:textColor="#FAFAFA"
+            />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Angka Kredit "
+        android:textColor="#FAFAFA"
+        android:textSize="18sp"
+        android:id="@+id/txtAngkaKredit"
+        android:layout_below="@+id/line1"
+        android:layout_marginLeft="30dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line2"
+        android:layout_below="@+id/txtAngkaKredit"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        >
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editKredit"
+            android:textColor="#FAFAFA"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kuantitas "
+        android:textColor="#FAFAFA"
+        android:textSize="18sp"
+        android:id="@+id/txtKuantitas"
+        android:layout_below="@+id/line2"
+        android:layout_marginLeft="30dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line3"
+        android:layout_below="@+id/txtKuantitas"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editKuantitas"
+            android:textColor="#FAFAFA"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kualitas / Mutu"
+        android:textColor="#FAFAFA"
+        android:textSize="18sp"
+        android:id="@+id/txtKualitas"
+        android:layout_below="@+id/line3"
+        android:layout_marginLeft="30dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line4"
+        android:layout_below="@+id/txtKualitas"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editKualitas"
+            android:textColor="#FAFAFA"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Output "
+        android:textColor="#FAFAFA"
+        android:textSize="18sp"
+        android:id="@+id/txtOutput"
+        android:layout_below="@+id/line4"
+        android:layout_marginLeft="30dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line5"
+        android:layout_below="@+id/txtOutput"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editOutput"
+            android:textColor="#FAFAFA"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Waktu "
+        android:textColor="#FAFAFA"
+        android:textSize="18sp"
+        android:id="@+id/txtWaktu"
+        android:layout_below="@+id/line5"
+        android:layout_marginLeft="30dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line6"
+        android:layout_below="@+id/txtWaktu"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        >
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editWaktu"
+            android:layout_weight="0.8"
+            android:textColor="#FAFAFA"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bulan"
+            android:textColor="#FAFAFA"
+            android:textSize="15sp"
+            android:layout_weight="0.2"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSimpanSKP"
+        android:text="SIMPAN"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/line6"
+        android:onClick="btnSimpanSKP"
+        android:drawableLeft="@android:drawable/ic_input_add"
+        />
+
+</RelativeLayout>
+    </ScrollView>

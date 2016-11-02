@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="glory.dataskp.LihatPegawaiActivity"
+    android:background="@drawable/back2"
+
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rela1">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/layout_toolbar"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo_bptk"
+            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balai Pengkajian Teknologi Pertanian"
+            android:layout_marginRight="5dp"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Data Pegawai"
+        android:textColor="#FAFAFA"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:id="@+id/txtjudulUtama"
+        android:layout_below="@+id/rela1"
+        android:textStyle="bold"
+        />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtjudulUtama"
+
+        >
+    </ListView>
+
+</RelativeLayout>
